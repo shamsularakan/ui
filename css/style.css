@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+
+}
+
+:root {
+    --main-color: #0CA7AA;
+    --secondary-color: #FFAB11;
+    --third-color: #E61946;
+    --forth-color: #AA2891;
+    --fith-color: #502D8C;
+    --writing-color: #24343F;
+    --section-background: #f6f6f6;
+
+    --section-padding: 60px;
+}
+
+
+.container {
+    margin: auto;
+    padding: 0 15px;
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.header {
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+
+}
+
+.header .container a i {
+    font-size: 35px;
+    color: white;
+}
+
+.header .container .content img {
+    width: 150px;
+}
+
+.profile {
+    display: flex;
+
+}
+
+@media(max-width:768px) {
+    .profile {
+        display: block;
+        text-align: center;
+        background-color: var(--main-color);
+        margin: 0 auto;
+        border-radius: 0;
+    }
+
+    .profile .image {
+        background-color: transparent;
+    }
+}
+
+.profile .image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.profile .image img {
+    width: 100%;
+
+}
+
+.profile .content {
+    margin: 0 30px;
+    padding-top: 20px;
+}
+
+.profile .content h2 {
+    margin-bottom: 15px;
+}
+
+.profile .content p {
+    margin-bottom: 15px;
+}
+
+.profile .content a {
+    display: block;
+    text-decoration: none;
+    width: 80px;
+    text-align: center;
+    padding: 7px 10px;
+    background-color: var(--main-color);
+    border-radius: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.main .container {
+    content: "";
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+
+}
+
+.main .container .image {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    padding: 3px;
+    margin-left: 15px;
+}
+
+.main .container .image .bkg {
+    overflow: hidden;
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    border: 3px solid white;
+    padding: 10px 5px 10px 0;
+}
+
+.main .container .image .bkg img {
+    width: 100%;
+
+}
+
+.subjects .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.subjects .container .sbj-card {
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+
+
+}
+
+.subjects .container .sbj-card .text h3 {
+    line-height: 5;
+    color: white;
+    padding-right: 15px;
+}
+
+.subjects .container .sbj-card img {
+    width: 100px;
+}
+
+.red-bk {
+    background-color: #E61946;
+}
+
+.blue-bk {
+    background-color: #0CA7AA;
+}
+
+.green-bk {
+    background-color: #502D8C;
+}
+
+.yellow-bk {
+    background-color: #FFAB11;
+}
